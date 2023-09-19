@@ -7,6 +7,10 @@
     <link rel="shortcut icon" type="image/png" href="favicon-16x16.png" />
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/5.15.4/css/all.min.css"
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
@@ -55,18 +59,59 @@
           </div>
         </div>
       </section>
-      <div>
+      <div class="back-secundario">
         <section id="sec-contenido">
-          <h3>Elecciones 2021</h3>
-          <p>Resultados provisiorios</p>
-          <input type="button" name="Paso" id="Paso" value="Paso" />
-          <input type="button" name="General" id="General" value="General" />
+          <h3 id="titulo-sec">Elecciones 2021</h3>
+          <p id="parrafo-sec">Resultados provisiorios</p>
+          <div class="botonera">
+            <div class="boton-paso">
+              <i
+                class="fa-solid fa-envelope-open-text fa-2xl"
+                style="color: #ffffff"
+                id="icon-vote"
+              ></i>
+              <input type="button" name="Paso" id="Paso" value="Paso" />
+            </div>
+            <div class="boton-general">
+              <i
+                class="fa-solid fa-envelope-open-text fa-2xl"
+                style="color: #ffffff"
+                id="icon-vote"
+              ></i>
+              <input
+                type="button"
+                name="General"
+                id="General"
+                value="General"
+              />
+            </div>
+          </div>
         </section>
       </div>
     </main>
     <!--Pie de página-->
     <footer>
-      <p>Desarrollado con ♥ - LC2</p>
+      <div class="footer-container">
+        <div class="footer-img">
+          <img
+            src="img/icons/Ministerio-del-Interior_pluma.1ab9a7a7.png"
+            alt="ministerio"
+          />
+          <img src="img/icons/Logo_DINE_negativo.a88f983e.png" alt="dine-neg" />
+          <img src="img/icons/logos_001-10.4430c8d5.png" alt="001logo" />
+        </div>
+        <div class="footer-parrafo">
+          <p>
+            “Resultados Provisorios en base a telegramas recibidos (Art. 43 Ley
+            26571 y Art. 105 Ley 19945). Los porcentajes de las agrupaciones
+            políticas son calculados sobre los votos válidos (PASO) conforme al
+            art. 45 Ley 26.571 y afirmativos (Generales). No se incluyen los
+            votos correspondientes a los electores residentes en el exterior ni
+            privados de la libertad. Al usar este sitio usted acepta los
+            <a href="#" id="link-footer">Términos y Condiciones."</a>
+          </p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
