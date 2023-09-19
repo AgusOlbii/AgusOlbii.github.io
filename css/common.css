@@ -1,1 +1,70 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-size: large;
+  font-family: sans-serif;
+}
+
+.header-page {
+  background-color: rgb(35, 156, 255);
+}
+.logo {
+  max-width: 200px;
+  padding: 5px 25px;
+}
+
+.back-container {
+  text-align: right;
+  background-color: #292929;
+}
+
+#titulo-principal {
+  font-size: 40px;
+  margin: 10px 20px;
+}
+
+#parrafo-principal {
+  font-size: small;
+  margin: 0px 20px;
+  padding: 20px 0%;
+  inline-size: 490px;
+  line-height: 180%;
+}
+
+.active {
+  font-size: small;
+  display: inline-block;
+  padding: 1px 7px;
+  margin: 5px 35px;
+  background-color: #393939; /* Color de fondo del enlace */
+  color: #fff; /* Color del texto del enlace */
+  text-decoration: none; /* Quita el subrayado del enlace */
+  border-radius: 20px; /* Añade bordes redondeados */
+  border: 1.4px solid white;
+}
+
+.active:hover {
+  background-color: #292929;
+}
+
+.contenedor {
+  display: flex; /* Utiliza flexbox para crear una disposición de dos columnas */
+  align-items: center; /* Centra verticalmente el contenido */
+}
+
+.columna-izquierda {
+  flex: 1; /* Toma el 50% del espacio disponible */
+  padding: 20px; /* Espaciado interior para separar el contenido del borde */
+}
+
+.columna-derecha {
+  flex: 1; /* Toma el 50% del espacio disponible */
+  text-align: center; /* Centra horizontalmente el contenido */
+  height: auto;
+  width: 100px;
+}
