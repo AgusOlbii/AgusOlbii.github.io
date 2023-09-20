@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
 
+/* probando trabajo en grupo git */
+
 * {
   margin: 0;
   padding: 0;
@@ -10,8 +12,8 @@
   font-family: sans-serif;
 }
 body {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 main {
   flex: 1;
@@ -192,7 +194,7 @@ footer {
   color: blue;
 }
 
-@media screen and (min-height: 648px){
+@media screen and (min-height: 648px) {
   footer {
     margin-top: 300px;
   }
