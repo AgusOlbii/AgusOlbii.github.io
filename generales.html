@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sistema de Publicación de Resultados Electorales</title>
+    <title>Generales | GOB</title>
     <link rel="shortcut icon" type="image/png" href="favicon-16x16.png" />
     <link
       rel="stylesheet"
@@ -16,8 +16,8 @@
       referrerpolicy="no-referrer"
     />
     <!-- Estilos CSS -->
-    <link rel="stylesheet" href="#">
     <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/pages/generales.css" />
   </head>
   <body>
     <header>
@@ -29,17 +29,73 @@
       </div>
       <!--Barra de menú principal-->
       <div class="back-container">
+        <div class="container-izq">
+          <div class="container-select">
+            <select name="miSelectAño" id="año" class="select-box">
+              <optgroup label="Año">
+                <div class="dentro">
+                  <option value="año">Año</option>
+                  <option value="2019">2019</option>
+                  <option value="2020">2020</option>
+                  <option value="2021">2021</option>
+                  <option value="2022">2022</option>
+                  <option value="2023">2023</option>
+                </div>
+              </optgroup>
+            </select>
+            <select name="miSelectCargo" id="cargo" class="select-box">
+              <optgroup label="Cargo">
+                <div class="dentro">
+                  <option value="cargo">Cargo</option>
+                  <option value="diputado">Diputado</option>
+                  <option value="senador">Senador</option>
+                  <option value="presidente">Presidente</option>
+                  <option value="intendente">Intendente</option>
+                  <option value="concejal">Concejal</option>
+                </div>
+              </optgroup>
+            </select>
+            <select name="miSelectDistrito" id="distrito" class="select-box">
+              <optgroup label="Distrito">
+                <div class="dentro">
+                  <option value="Distrito">Distrito</option>
+                  <option value="cordoba">Córdoba</option>
+                  <option value="buenosaires">Buenos Aires</option>
+                  <option value="santafe">Santa Fe</option>
+                  <option value="tucuman">Tucumán</option>
+                  <option value="salta">Salta</option>
+                </div>
+              </optgroup>
+            </select>
+            <div class="contenedor-filtrar">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input
+                class="busqueda"
+                type="search"
+                name="buscar"
+                id="barra-busqueda"
+                placeholder="Filtrar"
+              />
+            </div>
+          </div>
+
+          <ul>
+            <li><a class="active" href="informes.html">Informes</a></li>
+            <li><a href="#contact"></a></li>
+          </ul>
+        </div>
         <ul>
-          <li><a class="active" href="informes.html">Informes</a></li>
+          <li>
+            <a class="active" href="index.html" id="boton-inicio">Inicio</a>
+          </li>
           <li><a href="#contact"></a></li>
         </ul>
       </div>
     </header>
     <!-- Contenido principal de la página -->
-    
-        <!--Seccion para agregar una palicula favorita por codigo-->
-        
-          
+
+    <!--Seccion para agregar una palicula favorita por codigo-->
+
     <!--Pie de página-->
     <footer>
       <div class="footer-container">
