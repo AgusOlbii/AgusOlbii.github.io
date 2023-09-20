@@ -9,7 +9,13 @@
   font-size: large;
   font-family: sans-serif;
 }
-
+body {
+    display: flex;
+    flex-direction: column;
+}
+main {
+  flex: 1;
+}
 .header-page {
   background-color: rgb(35, 156, 255);
 }
@@ -144,6 +150,7 @@ footer {
   background-color: #101010;
   color: #fff;
   padding: 20px;
+  text-align: center;
 }
 
 .footer-container {
@@ -183,4 +190,10 @@ footer {
 
 #link-footer:active {
   color: blue;
+}
+
+@media screen and (min-height: 648px){
+  footer {
+    margin-top: 300px;
+  }
 }
