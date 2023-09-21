@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/icons/favicon-16x16.png">
     <title>Sistema de Publicación de Resultados Electorales</title>
-    <link rel="shortcut icon" type="image/png" href="favicon-16x16.png" />
+    
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -22,16 +23,25 @@
   <body>
     <header>
       <!--Barra de logo portal-->
-      <div class="header-page">
+      <div class="barra-de-logo">
         <a href="index.html">
           <img src="img/Logo_DINE_negativo.png" alt="logo" class="logo" />
         </a>
       </div>
       <!--Barra de menú principal-->
-      <div class="back-container">
+      <div class="barra-de-menu">
+        <p id="parrafo">Consultar: </p>
         <ul>
-          <li><a class="active" href="informes.html">Informes</a></li>
-          <li><a href="#contact"></a></li>
+          <li><a class="boton-paso" href="paso.html">Paso</a></li>
+          
+        </ul>
+        <ul>
+          <li><a class="boton-general" href="generales.html">General</a></li>
+          
+        </ul>
+        <ul>
+          <li><a class="boton-informe" href="informes.html">Informes</a></li>
+         
         </ul>
       </div>
     </header>
@@ -65,7 +75,7 @@
           <h3 id="titulo-sec">Elecciones 2021</h3>
           <p id="parrafo-sec">Resultados provisiorios</p>
           <div class="botonera">
-            <div class="boton-paso">
+            <div class="paso">
               <a href="./paso.html">
               <i
                 class="fa-solid fa-envelope-open-text fa-2xl"
@@ -75,7 +85,7 @@
               <input type="button" name="Paso" id="Paso" value="Paso" />
               </a>
             </div>
-            <div class="boton-general">
+            <div class="general">
               <a href="./generales.html">
               <i
                 class="fa-solid fa-envelope-open-text fa-2xl"
@@ -113,7 +123,7 @@
             art. 45 Ley 26.571 y afirmativos (Generales). No se incluyen los
             votos correspondientes a los electores residentes en el exterior ni
             privados de la libertad. Al usar este sitio usted acepta los
-            <a href="#" id="link-footer">Términos y Condiciones."</a>
+            <a href="www.google.com" id="link-footer">Términos y Condiciones."</a>
           </p>
         </div>
       </div>
