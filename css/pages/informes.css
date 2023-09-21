@@ -1,0 +1,32 @@
+.grid-container {
+    max-height: 400px; /* Altura máxima de la grilla */
+    overflow-y: scroll; /* Agregar barra de desplazamiento vertical */
+    border: 1px solid #ccc;
+  }
+
+  .grid-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Columnas: Imagen de provincia y datos */
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .provincia-image {
+    width: 80px;
+    height: 80px;
+    background-image: url('imagen_provincia.jpg'); /* Reemplaza con la imagen de la provincia */
+    background-size: cover;
+    margin-right: 10px;
+  }
+
+  .eleccion-title {
+    font-weight: bold;
+  }
+
+  .datos-generales {
+    grid-column: span 2;
+  }
+
+  .datos-por-agrupacion {
+    grid-template-columns: 1fr 1fr; /* Dos columnas para agrupación y datos */
+  }
