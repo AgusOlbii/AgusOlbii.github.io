@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="img/icons/favicon-16x16.png">
-    <title>Sistema de Publicación de Resultados Electorales</title>
+    <title>Informe</title>
     
     <link
       rel="stylesheet"
@@ -18,7 +18,7 @@
     />
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="./css/pages/index.css">
+    <link rel="stylesheet" href="./css/pages/informes.css">
   </head>
   <body>
     <header>
@@ -30,17 +30,394 @@
       </div>
       <!--Barra de menú principal-->
       <div class="barra-de-menu">
+        <p id="parrafo">Consultar: </p>
         <ul>
-          <li><a class="active" href="informes.html">Informes</a></li>
-          <li><a href="#contact"></a></li>
+          <li><a class="boton-paso" href="paso.html">Paso</a></li>
+          
+        </ul>
+        <ul>
+          <li><a class="boton-general" href="generales.html">General</a></li>
+          
+        </ul>
+        <ul  class="contenedor-informe">
+          <li><a class="boton-informe" href="./index.html">Inicio</a></li>
+         
         </ul>
       </div>
     </header>
     <!-- Contenido principal de la página -->
     <main>
-      <section id="sec-titulo">
-        <!--Seccion para agregar una palicula favorita por codigo-->
-        
+          <div class="mensjaes">
+            <div class="verde">
+      
+              <p> <i class="fa fa-thumbs-up"></i> Se agrego con éxito el resultado al informe</p>
+            </div>
+            <div class="rojo">
+              <p> <i class=" fa fa-exclamation-triangle"></i> Error: Se produjo un error al intentar agregar resultados al
+                informe</p>
+            </div>
+            <div class="amarillo">
+              <p> <i class="fa fa-exclamation"></i> La operacion no se pudo completar</p>
+            </div>
+          </div>
+      <h1>Reporte de Elecciones</h1>
+      <div class="contenedor-principal">
+        <div class="contenedor-tabla">
+          <table class="grilla">
+            <thead>
+              <tr>
+                <th class="provincia">PROVINCIA</th>
+                <th class="eleccion">ELECCIÓN</th>
+                <th class="datos-generales">DATOS GENERALES</th>
+                <th class="datos-agrupados">DATOS POR AGRUPACION</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="provincia"><svg height="210" width="300"><path class="leaflet-interactive" stroke="#18a0fb"
+                  stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  fill="#18a0fb" fill-opacity="1" fill-rule="evenodd" d="M182 61L179 56L176 58L178 56L176
+                  53L173 55L169 47L168 48L164 45L157 43L158 41L155 41L154 36L149 32L148 33L143 29L142
+                  30L145 32L140 29L138 32L137 30L140 29L139 26L137 28L136 23L133 22L130 27L103 41L81
+                  99L82 134L131 179L159 140L168 137L171 139L174 138L181 141L186 137L195 136L200 130L207
+                  125L205 120L210 118L210 112L205 107L210 110L213 114L215 113L215 110L217 110L218 112L219
+                  111L217 109L221 111L224 109L220 106L222 106L221 102L218 102L216 104L215 103L217 102L212
+                  102L220 101L219 95L216 92L214 86L208 81L200 83L199 80L201 79L202 81L200 77L206 75L203
+                  75L203 73L206 73L201 71L205 70L199 69L198 68L202 68L200 66L195 67L194 66L198 65L188
+                  62L192 62L190 60L183 59L189 64L187 65z"></path></svg></td>
+                <td class="eleccion">
+                  <p class="texto-elecciones-chico">Elecciones 2021 | Generales</p>
+                  <p class="texto-path-chico">2020 > Generales > Provisorio > Senadores Nacionales > Buenos Aires</p>
+                </td>
+                <td>
+                  <div  class="contenido-datos-generales">
+                  <div class="mesas-estructuradas">
+                    <div class="icono-mesa">
+                      <i class="fa fa-check"></i> 
+                    </div>
+                    <div class="contenido-mesa">
+                      <h3>Mesas estructuradas</h3>
+                      <p>62.71%</p>
+                    </div>
+                  </div>
+                  <div class="electores">
+                    <div class="icono-electores">
+                      <i class="fa fa-check"></i> 
+                    </div>
+                    <div class="contenido-electores">
+                      <h3>Electores</h3>
+                      <p>62.71%</p>
+                    </div>
+                  </div>
+                  <div class="participacion-sobre-estructurado">
+                    <div class="icono-participacion">
+                      <i class="fa fa-check"></i> 
+                    </div>
+                    <div class="contenido-participacion">
+                      <h3>Participacion sobre estructurado</h3>
+                      <p>62.71%</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="contenido-datos-agrupados">
+                  <table class="sub-grilla">
+                    <tr>
+                      <th class="first-column">Juntos</th>
+                      <th class="second-column">38% 30000 votos</th>
+                    </tr>
+                    <tr>
+                      <th class="first-column">PJ</th>
+                      <th class="second-column">20% 12000 votos</th>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td class="provincia"><svg height="210" width="300"><path class="leaflet-interactive" stroke="#18a0fb"
+                  stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  fill="#18a0fb" fill-opacity="1" fill-rule="evenodd" d="M125 101L127 108L125 110L126
+                  111L122 123L120 125L121 174L160 174L160 157L172 157L197 120L197 114L193 110L195 109L194
+                  105L191 99L189 98L186 84L190 80L196 57L189 52L188 48L180 48L180 42L174 35L159 33L159
+                  30L153 30L151 28L147 29L147 27L139 26L125 28L126 37L121 41L114 42L112 52L106 66L106
+                  89L117 94L119 101z"></path></svg></td>
+                <td class="eleccion">
+                  <p class="texto-elecciones-chico">Elecciones 2021 | Generales</p>
+                  <p class="texto-path-chico">2020 > Generales > Provisorio > Senadores Nacionales > Buenos Aires</p>
+                </td>
+                <td>
+                  <div class="contenido-datos-generales">
+                  <div class="mesas-estructuradas">
+                    <div class="icono-mesa">
+                      <i class="fa fa-check"></i> 
+                    </div>
+                    <div class="contenido-mesa">
+                      <h3>Mesas estructuradas</h3>
+                      <p>62.71%</p>
+                    </div>
+                  </div>
+                  <div class="electores">
+                    <div class="icono-electores">
+                      <i class="fa fa-check"></i> 
+                    </div>
+                    <div class="contenido-electores">
+                      <h3>Electores</h3>
+                      <p>62.71%</p>
+                    </div>
+                  </div>
+                  <div class="participacion-sobre-estructurado">
+                    <div class="icono-participacion">
+                      <i class="fa fa-check"></i> 
+                    </div>
+                    <div class="contenido-participacion">
+                      <h3>Participacion sobre estructurado</h3>
+                      <p>62.71%</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="contenido-datos-agrupados">
+                  <table class="sub-grilla">
+                    <tr>
+                      <th class="first-column">Juntos</th>
+                      <th class="second-column">38% 30000 votos</th>
+                    </tr>
+                    <tr>
+                      <th class="first-column">PJ</th>
+                      <th class="second-column">20% 12000 votos</th>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td class="imagen-provincia"><svg height="210" width="300"><path class="leaflet-interactive" stroke="#18a0fb"
+                  stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  fill="#18a0fb" fill-opacity="1" fill-rule="evenodd" d="M106 135L108 138L109 135L116
+                  136L122 132L123 133L131 130L139 134L143 141L148 145L147 139L151 137L153 133L152 131L154
+                  131L159 126L160 121L168 117L169 114L174 109L176 103L180 102L183 95L186 93L189 87L192
+                  86L193 83L197 85L195 80L197 80L198 78L194 73L194 69L188 60L189 58L186 57L180 64L177
+                  60L174 60L173 62L170 60L164 61L145 55L130 56L127 58L124 61L126 69L125 72L123 77L120
+                  77L119 80L120 91L117 100L116 102L114 102L112 106L110 106L108 111L108 117L106 121L109
+                  127L106 133L107 135z"></path></svg></td>
+                <td class="eleccion">
+                  <p class="texto-elecciones-chico">Elecciones 2021 | Generales</p>
+                  <p class="texto-path-chico">2020 > Generales > Provisorio > Senadores Nacionales > Buenos Aires</p>
+                </td>
+                <td>
+                  <div class="contenido-datos-generales">
+                  <div class="mesas-estructuradas">
+                    <div class="icono-mesa">
+                      <i class="fa fa-check"></i> 
+                    </div>
+                    <div class="contenido-mesa">
+                      <h3>Mesas estructuradas</h3>
+                      <p>62.71%</p>
+                    </div>
+                  </div>
+                  <div class="electores">
+                    <div class="icono-electores">
+                      <i class="fa fa-check"></i> 
+                    </div>
+                    <div class="contenido-electores">
+                      <h3>Electores</h3>
+                      <p>62.71%</p>
+                    </div>
+                  </div>
+                  <div class="participacion-sobre-estructurado">
+                    <div class="icono-participacion">
+                      <i class="fa fa-check"></i> 
+                    </div>
+                    <div class="contenido-participacion">
+                      <h3>Participacion sobre estructurado</h3>
+                      <p>62.71%</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="contenido-datos-agrupados">
+                  <table class="sub-grilla">
+                    <tr>
+                      <th class="first-column">Juntos</th>
+                      <th class="second-column">38% 30000 votos</th>
+                    </tr>
+                    <tr>
+                      <th class="first-column">PJ</th>
+                      <th class="second-column">20% 12000 votos</th>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td class="provincia"><svg height="210" width="800"><path class="leaflet-interactive" stroke="#18a0fb"
+                  stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  fill="#18a0fb" fill-opacity="1" fill-rule="evenodd" d="M152 149L198 149L200 144L198
+                  136L204 132L203 127L210 120L196 108L192 106L189 107L187 106L186 102L180 101L176 93L168
+                  89L167 85L161 78L155 75L147 68L145 64L140 63L129 54L119 51L119 58L95 89L134 89L134
+                  149z"></path></svg></td>
+                <td class="eleccion">
+                  <p class="texto-elecciones-chico">Elecciones 2021 | Generales</p>
+                  <p class="texto-path-chico">2020 > Generales > Provisorio > Senadores Nacionales > Buenos Aires</p>
+                </td>
+                <td>
+                  <div class="contenido-datos-generales">
+                  <div class="mesas-estructuradas">
+                    <div class="icono-mesa">
+                      <i class="fa fa-check"></i> 
+                    </div>
+                    <div class="contenido-mesa">
+                      <h3>Mesas estructuradas</h3>
+                      <p>62.71%</p>
+                    </div>
+                  </div>
+                  <div class="electores">
+                    <div class="icono-electores">
+                      <i class="fa fa-check"></i> 
+                    </div>
+                    <div class="contenido-electores">
+                      <h3>Electores</h3>
+                      <p>62.71%</p>
+                    </div>
+                  </div>
+                  <div class="participacion-sobre-estructurado">
+                    <div class="icono-participacion">
+                      <i class="fa fa-check"></i> 
+                    </div>
+                    <div class="contenido-participacion">
+                      <h3>Participacion sobre estructurado</h3>
+                      <p>62.71%</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="contenido-datos-agrupados">
+                  <table class="sub-grilla">
+                    <tr>
+                      <th class="first-column">Juntos</th>
+                      <th class="second-column">38% 30000 votos</th>
+                    </tr>
+                    <tr>
+                      <th class="first-column">PJ</th>
+                      <th class="second-column">20% 12000 votos</th>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td class="provincia"><svg height="210" width="800"><path class="leaflet-interactive" stroke="#18a0fb"
+                  stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  fill="#18a0fb" fill-opacity="1" fill-rule="evenodd" d="M94 37L63 37L64 41L59 43L58
+                  41L55 46L57 52L55 54L55 71L64 74L59 82L61 82L61 85L62 84L64 87L67 88L67 90L63 92L63
+                  94L66 97L61 103L62 112L72 111L73 113L75 112L78 116L78 118L76 118L75 120L76 123L74
+                  125L69 122L65 124L56 123L57 128L68 130L70 136L73 139L73 141L70 144L68 144L70 147L63
+                  149L64 150L62 155L66 161L66 164L158 164L163 156L164 151L172 140L181 138L181 136L186
+                  132L188 133L190 131L194 131L196 133L197 131L202 133L203 130L205 129L200 126L201 122L207
+                  117L208 118L211 111L210 105L212 104L209 91L210 88L216 80L216 78L222 72L232 68L232
+                  66L226 66L216 60L217 58L226 52L232 53L235 56L234 60L236 64L248 61L249 56L245 39L236
+                  43L239 48L237 50L227 50L225 49L228 44L217 41L215 37L105 37z"></path></svg></td>
+                <td class="eleccion">
+                  <p class="texto-elecciones-chico">Elecciones 2021 | Generales</p>
+                  <p class="texto-path-chico">2020 > Generales > Provisorio > Senadores Nacionales > Buenos Aires</p>
+                </td>
+                <td>
+                  <div class="contenido-datos-generales">
+                  <div class="mesas-estructuradas">
+                    <div class="icono-mesa">
+                      <i class="fa fa-check"></i> 
+                    </div>
+                    <div class="contenido-mesa">
+                      <h3>Mesas estructuradas</h3>
+                      <p>62.71%</p>
+                    </div>
+                  </div>
+                  <div class="electores">
+                    <div class="icono-electores">
+                      <i class="fa fa-check"></i> 
+                    </div>
+                    <div class="contenido-electores">
+                      <h3>Electores</h3>
+                      <p>62.71%</p>
+                    </div>
+                  </div>
+                  <div class="participacion-sobre-estructurado">
+                    <div class="icono-participacion">
+                      <i class="fa fa-check"></i> 
+                    </div>
+                    <div class="contenido-participacion">
+                      <h3>Participacion sobre estructurado</h3>
+                      <p>62.71%</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="contenido-datos-agrupados">
+                  <table class="sub-grilla">
+                    <tr>
+                      <th class="first-column">Juntos</th>
+                      <th class="second-column">38% 30000 votos</th>
+                    </tr>
+                    <tr>
+                      <th class="first-column">PJ</th>
+                      <th class="second-column">20% 12000 votos</th>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td class="provincia"><svg height="210" width="800"><path class="leaflet-interactive" stroke="#18a0fb"
+                  stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  fill="#18a0fb" fill-opacity="1" fill-rule="evenodd" d="M98 46L97 86L107 89L119 99L123
+                  99L123 101L127 105L140 114L146 124L154 128L158 136L163 137L167 142L169 141L174 143L189
+                  155L190 149L191 150L192 148L192 140L198 133L199 134L198 132L200 131L199 130L202 124L206
+                  122L202 113L196 108L194 109L191 106L189 107L186 104L178 102L165 95L165 93L150 83L145
+                  84L140 81L137 82L131 80L124 72L118 69L115 65L111 64L105 58L105 56L99 48L100
+                  47z"></path></svg>
+                  </td>
+                <td class="eleccion">
+                  <p class="texto-elecciones-chico">Elecciones 2021 | Generales</p>
+                  <p class="texto-path-chico">2020 > Generales > Provisorio > Senadores Nacionales > Buenos Aires</p>
+                </td>
+                <td>
+                  <div class="contenido-datos-generales">
+                  <div class="mesas-estructuradas">
+                    <div class="icono-mesa">
+                      <i class="fa fa-check"></i> 
+                    </div>
+                    <div class="contenido-mesa">
+                      <h3>Mesas estructuradas</h3>
+                      <p>62.71%</p>
+                    </div>
+                  </div>
+                  <div class="electores">
+                    <div class="icono-electores">
+                      <i class="fa fa-check"></i> 
+                    </div>
+                    <div class="contenido-electores">
+                      <h3>Electores</h3>
+                      <p>62.71%</p>
+                    </div>
+                  </div>
+                  <div class="participacion-sobre-estructurado">
+                    <div class="icono-participacion">
+                      <i class="fa fa-check"></i> 
+                    </div>
+                    <div class="contenido-participacion">
+                      <h3>Participacion sobre estructurado</h3>
+                      <p>62.71%</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="contenido-datos-agrupados">
+                  <table class="sub-grilla">
+                    <tr>
+                      <th class="first-column">Juntos</th>
+                      <th class="second-column">38% 30000 votos</th>
+                    </tr>
+                    <tr>
+                      <th class="first-column">PJ</th>
+                      <th class="second-column">20% 12000 votos</th>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>  
     </main>
     <!--Pie de página-->
     <footer>
