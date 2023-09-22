@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/icons/favicon-16x16.png">
     <title>Generales | GOB</title>
-    <link rel="shortcut icon" type="image/png" href="favicon-16x16.png" />
+    
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -16,88 +17,41 @@
       referrerpolicy="no-referrer"
     />
     <!-- Estilos CSS -->
-    <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css/pages/generales.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/pages/generales.css" />
   </head>
   <body>
     <header>
       <!--Barra de logo portal-->
-      <div class="header-page">
+      <div class="barra-de-logo">
         <a href="index.html">
           <img src="img/Logo_DINE_negativo.png" alt="logo" class="logo" />
         </a>
       </div>
       <!--Barra de menú principal-->
-      <div class="back-container">
-        <div class="container-izq">
-          <div class="container-select">
-            <select name="miSelectAño" id="año" class="select-box">
-              <optgroup label="Año">
-                <div class="dentro">
-                  <option value="año">Año</option>
-                  <option value="2019">2019</option>
-                  <option value="2020">2020</option>
-                  <option value="2021">2021</option>
-                  <option value="2022">2022</option>
-                  <option value="2023">2023</option>
-                </div>
-              </optgroup>
-            </select>
-            <select name="miSelectCargo" id="cargo" class="select-box">
-              <optgroup label="Cargo">
-                <div class="dentro">
-                  <option value="cargo">Cargo</option>
-                  <option value="diputado">Diputado</option>
-                  <option value="senador">Senador</option>
-                  <option value="presidente">Presidente</option>
-                  <option value="intendente">Intendente</option>
-                  <option value="concejal">Concejal</option>
-                </div>
-              </optgroup>
-            </select>
-            <select name="miSelectDistrito" id="distrito" class="select-box">
-              <optgroup label="Distrito">
-                <div class="dentro">
-                  <option value="Distrito">Distrito</option>
-                  <option value="cordoba">Córdoba</option>
-                  <option value="buenosaires">Buenos Aires</option>
-                  <option value="santafe">Santa Fe</option>
-                  <option value="tucuman">Tucumán</option>
-                  <option value="salta">Salta</option>
-                </div>
-              </optgroup>
-            </select>
-            <div class="contenedor-filtrar">
-              <i class="fa-solid fa-magnifying-glass"></i>
-              <input
-                class="busqueda"
-                type="search"
-                name="buscar"
-                id="barra-busqueda"
-                placeholder="FILTRAR"
-              />
-            </div>
-          </div>
-
-          <ul class="informe">
-            <li><a href="informes.html">INFORMES</a></li>
-          </ul>
-          <ul>
-            <li><a href="#contact"></a></li>
-          </ul>
-        </div>
+      <div class="barra-de-menu">
         <ul>
-          <li>
-            <a class="active" href="index.html" id="boton-inicio">INICIO</a>
-          </li>
+          <li><a class="active" href="informes.html">Informes</a></li>
           <li><a href="#contact"></a></li>
         </ul>
       </div>
     </header>
     <!-- Contenido principal de la página -->
-
-    <!--Seccion para agregar una palicula favorita por codigo-->
-
+    <main>
+        <div class="mensjaes">
+          <div class="verde">
+            <p>Se agrego con exito el resultado al informe</p>
+          </div>
+          <div class="rojo">
+            <p>Error: Se produjo un error al intentar agregar resultados al informe</p>
+          </div>
+          <div class="amarillo">
+            <p>mensaje en amarillo</p>
+          </div>
+        </div>
+        <!--Seccion para agregar una palicula favorita por codigo-->
+        
+    </main>
     <!--Pie de página-->
     <footer>
       <div class="footer-container">
@@ -117,7 +71,7 @@
             art. 45 Ley 26.571 y afirmativos (Generales). No se incluyen los
             votos correspondientes a los electores residentes en el exterior ni
             privados de la libertad. Al usar este sitio usted acepta los
-            <a href="#" id="link-footer">Términos y Condiciones."</a>
+            <a href="www.google.com" id="link-footer">Términos y Condiciones."</a>
           </p>
         </div>
       </div>
