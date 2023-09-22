@@ -179,7 +179,10 @@ select {
     color: var(--textos);
 }
 
-
+.derecha {
+  display: flex;
+  margin-left: auto;
+}
 .mesas-estructuradas{
     display: flex;
     align-items: center; 
