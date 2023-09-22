@@ -446,6 +446,8 @@ table{
     --bar-spacing: 10px;
     font-family: sans-serif;
     width: var(--chart-width);
+    margin: auto;
+    padding-top: 35px;
     }
     .chart-wrap .title {
     font-weight: bold;
@@ -456,6 +458,8 @@ table{
     /* cuando definimos el gráfico en horizontal, lo giramos 90 grados */
     .chart-wrap.horizontal .grid {
     transform: rotate(-90deg);
+    margin: auto;
+    
     }
     .chart-wrap.horizontal .bar::after {
     /* giramos las letras para horizontal*/

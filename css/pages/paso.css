@@ -1,0 +1,516 @@
+select {
+    background-color: transparent;
+    border: 0;
+    font-size: 14px;
+    height: 30px;
+    padding: 5px;
+    color: var(--celeste);
+    font-weight: bold;
+  }
+  
+  .barra-de-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+  }
+  
+  .filtrar {
+    background-color: white;
+    border-radius: 15px;
+    font-family: #fff;
+    font-size: 15px;
+    width: 100px;
+    padding-left: 15px;
+    padding-inline-start: 20px;
+  }
+  
+  .barra-de-menu i {
+    color: rgb(0, 0, 0);
+  
+    align-items: center;
+    margin-left: -15px;
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+    transform: translateX(160%);
+  }
+  
+  .boton-general {
+    background-color: var(--celeste);
+    border-radius: 5px;
+    padding: 5px 3em;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 5px;
+    display: flex;
+  }
+  
+  .boton-general:hover {
+    background-color: var(--gris-claro);
+  }
+  
+  .boton-informe {
+    border: 1px solid white;
+    border-radius: 15px;
+    font-size: 10px;
+    text-align: center;
+    color: white;
+    margin: 5px;
+    padding: 5px 3em;
+  
+    display: flex;
+  }
+  
+  .boton-informe:hover {
+    background-color: var(--gris-claro);
+  }
+  
+  .inicio {
+    background-color: var(--gris-claro);
+    border-radius: 5px;
+    padding: 5px 3em;
+    color: #fff;
+    font-size: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: auto;
+    width: 5%;
+    padding-bottom: 1px;
+    padding-top: 1px;
+  }
+  
+  .inicio a {
+    color: white;
+    font-size: 15px;
+  }
+  
+  .inicio:hover {
+    background-color: var(--textos);
+  }
+  
+  
+  .verde p {
+  
+    border-radius: 10px;
+    width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+    color: #FFffFF;
+    font-size: 12px;
+    font-weight: 200;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  
+    background-color: var(--mensaje-usuario-verde);
+  
+  }
+  
+  .rojo p {
+    background-color: var(--mensaje-usuario-rojo);
+  
+    border-radius: 10px;
+    width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+    color: #FFffFF;
+    font-size: 12px;
+    font-weight: 200;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+  .amarillo p {
+    background-color: var(--mensaje-usuario-amarillo);
+  
+    border-radius: 10px;
+    width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+    color: #FFffFF;
+    font-size: 12px;
+    font-weight: 200;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+  
+  
+  .texto-path {
+    font-size: 14px;
+    font-family: Roboto;
+    Color: var(--celeste);
+    padding-bottom: 45px;
+  }
+  
+  
+  .texto {
+    padding-left: 20px;
+  }
+  
+  .contenedor-cajas {
+    display: flex;
+    justify-content: center;
+  
+  }
+  
+  
+  
+  
+  .agregar-informe {
+  
+  
+    border: 0;
+    background-color: var(--gris-claro);
+    color: white;
+    font-size: 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    height: 35px;
+    width: 250px;
+    margin-top: auto;
+    margin-bottom: 25px;
+    min-width: 250px;
+  
+  }
+  
+  .agregar-informe:hover {
+    color: var(--textos);
+  }
+  
+  .derecha {
+    display: flex;
+    margin-left: auto;
+  }
+  
+  .derecha {
+    display: flex;
+    margin-left: auto;
+  }
+  .mesas-estructuradas{
+      display: flex;
+      align-items: center; 
+      margin: 15px;
+      width: 280px;
+      height: 70px;
+      padding: 0.5rem 1rem;
+      font-family: #fff;
+      border-radius: 10px;
+      background-color: var(--celeste);
+      color: white;
+    }
+    
+    .icono-mesa {
+      flex: 0 0 30%; 
+      text-align: center;
+      transform: translateX(-5px);
+    }
+    
+    .icono-mesa i {
+      font-size: 30px; 
+    }
+    
+    .contenido-mesa h3{
+      color: white; 
+    }
+    
+    
+    .contenido-mesa p {
+      
+      line-height: 1.5; 
+      color: white;
+      font-size: 12px;
+    }
+  
+  .icono-mesa {
+    flex: 0 0 30%;
+    text-align: center;
+    transform: translateX(-5px);
+  }
+  
+  .icono-mesa i {
+    font-size: 30px;
+  }
+  
+  .contenido-mesa h3 {
+    color: white;
+  }
+  
+  
+  .contenido-mesa p {
+  
+    line-height: 1.5;
+    color: white;
+    font-size: 12px;
+  }
+  
+  .electores {
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    width: 280px;
+    height: 70px;
+    padding: 0.5rem 1rem;
+    font-family: #fff;
+    border-radius: 10px;
+    background-color: var(--magenta);
+    color: white;
+  }
+  
+  .icono-electores {
+    flex: 0 0 30%;
+    text-align: center;
+    transform: translateX(-5px);
+  }
+  
+  .icono-electores i {
+    font-size: 30px;
+  }
+  
+  .contenido-electores h3 {
+    color: white;
+  }
+  
+  
+  .contenido-electores p {
+  
+    line-height: 1.5;
+    color: white;
+    font-size: 12px;
+  }
+  
+  .participacion-sobre-estructurado {
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    width: 280px;
+    height: 70px;
+    padding: 0.5rem 1rem;
+    font-family: #fff;
+    border-radius: 10px;
+    background-color: var(--morado);
+    color: white;
+  }
+  
+  .icono-participacion {
+    flex: 0 0 30%;
+    text-align: center;
+    transform: translateX(-5px);
+  }
+  
+  .icono-participacion i {
+    font-size: 30px;
+  }
+  
+  .contenido-participacion h3 {
+    color: white;
+    font-size: 12px;
+  }
+  
+  
+  .contenido-participacion p {
+  
+    line-height: 1.5;
+    color: white;
+    font-size: 12px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    margin: auto;
+  }
+  
+  .grid-1 {
+    
+    margin: 2px;
+    border-radius: 25px;
+    border: 1px solid var(--borde-Grilla);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2) ;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 650px;
+  }
+  
+  .grid-2 {
+    margin: 2px;
+    border-radius: 25px;
+    border: 1px solid var(--borde-Grilla);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2) ;
+    width: 650px;
+  
+  }
+  
+  .grid-3 {
+    margin: 2px;
+    border-radius: 25px;
+    border: 1px solid var(--borde-Grilla);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2) ;
+    width: 650px;
+  }
+  
+  .all-container {
+    margin: auto;
+    max-width: 2000px;
+    padding-bottom: 15px;
+  }
+  
+  .grid-1 h2{
+    font-weight: bold;
+    padding: 1.8em 0 0 0;
+    text-align: center;
+    white-space: nowrap;
+  }
+  
+  .grid-2 h2{
+    font-weight: bold;
+    padding: 1.8em 0 0 0;
+    text-align: center;
+    white-space: nowrap;
+  }
+  
+  
+  .grid-3 h2{
+    font-weight: bold;
+    padding: 1.8em 0 0 0;
+    text-align: center;
+    white-space: nowrap;
+  }
+  
+  .grid-1 tbody{
+    height: 325px;
+    
+    
+    
+  }
+  
+  table{
+    margin: auto;
+    border: 0;
+    min-width: 600px;
+    overflow: scroll;
+  }
+  
+  .grid-1 h3{
+    text-align: left;
+    padding: 5px;
+  }
+  
+  .text {
+    display: flex;
+    width: 90%;
+  }
+  .partido-politico {
+    margin: auto;
+  }
+  
+  .sub-titulo {
+    border-bottom: 1px solid;
+  }
+  
+  /*barra de progreso*/
+  .progress {
+  
+    height: 35px;
+    width: 90%;
+    margin: auto;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    }
+    .progress-bar {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: width 0.25s;
+    border-radius: 15px;
+    }
+    .progress-bar-text {
+    margin-left: 10px;
+    font-weight: bold;
+    color: var(--textos);
+    font-size: 9px;
+    }
+  
+    .chart-wrap {
+      --chart-width: 260px;
+      --grid-color: #aaa;
+      --bar-thickness: 25px;
+      --bar-rounded: 3px;
+      --bar-spacing: 10px;
+      font-family: sans-serif;
+      width: var(--chart-width);
+      margin: auto;
+      padding-top: 35px;
+      }
+      .chart-wrap .title {
+      font-weight: bold;
+      padding: 1.8em 0 2.8em;
+      text-align: center;
+      white-space: nowrap;
+      }
+      /* cuando definimos el gráfico en horizontal, lo giramos 90 grados */
+      .chart-wrap.horizontal .grid {
+      transform: rotate(-90deg);
+      margin: auto;
+      }
+      .chart-wrap.horizontal .bar::after {
+      /* giramos las letras para horizontal*/
+      transform: rotate(45deg);
+      padding-top: 0px;
+      display: block;
+      }
+      .chart-wrap .grid {
+      margin-left: 50px;
+      position: relative;
+      padding: 5px 0 5px 0;
+      height: 100%;
+      width: 100%;
+      border-left: 2px solid var(--grid-color);
+      font-size: 10px;
+      }
+      /* posicionamos el % del gráfico*/
+      .chart-wrap .grid::before {
+      font-size: 0.8em;
+      
+      font-weight: bold;
+      content: '0%';
+      position: absolute;
+      left: -0.5em;
+      top: -1.5em;
+      }
+      .chart-wrap .grid::after {
+      font-size: 0.8em;
+      font-weight: bold;
+      content: '100%';
+      position: absolute;
+      right: -1.5em;
+      top: -1.5em;
+      }
+      /* giramos las valores de 0% y 100% para horizontal */
+      .chart-wrap.horizontal .grid::before, .chart-wrap.horizontal .grid::after {
+      transform: rotate(90deg);
+      }
+      .chart-wrap .bar {
+      width: var(--bar-value);
+      height: var(--bar-thickness);
+      margin: var(--bar-spacing) 0;
+      background-color: var(--bar-color);
+      border-radius: 0 var(--bar-rounded) var(--bar-rounded) 0;
+      }
+      .chart-wrap .bar:hover {
+      opacity: 0.7;
+      }
+      .chart-wrap .bar::after {
+      content: attr(data-name);
+      margin-left: 100%;
+      padding: 10px;
+      display: inline-block;
+      white-space: nowrap;
+      }
