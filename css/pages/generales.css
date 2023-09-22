@@ -1,7 +1,95 @@
-.mensajes p{
-    
-
+select {
+    background-color: transparent;
+    border: 0;
+    font-size: 14px;
+    height: 30px;
+    padding: 5px;
+    color: var(--celeste);
+    font-weight: bold;
 }
+
+.barra-de-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+.filtrar {
+    background-color: white;
+    border-radius: 15px;
+    font-family: #fff;
+    font-size: 15px;
+    width: 100px;
+    padding-left: 15px;
+    padding-inline-start: 20px;
+}
+
+.barra-de-menu i{
+    color: rgb(0, 0, 0);
+   
+    align-items: center;
+    margin-left: -15px;
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+    transform: translateX(160%);
+}
+
+.boton-general {
+    background-color: var(--celeste);
+    border-radius: 5px;
+    padding: 5px 3em;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 5px;
+    display: flex;
+}
+
+.boton-general:hover {
+    background-color: var(--gris-claro);
+}
+
+.boton-informe {
+    border: 1px solid white;
+    border-radius: 15px;
+    font-size: 10px;
+    text-align: center;
+    color: white;
+    margin: 5px;
+    padding: 5px 3em;
+
+    display: flex;
+}
+
+.boton-informe:hover {
+    background-color: var(--gris-claro);
+}
+
+.inicio {
+    background-color: var(--gris-claro);
+    border-radius: 5px;
+    padding: 5px 3em;
+    color: #fff;
+    font-size: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: auto;
+    width: 5%;
+    padding-bottom: 1px;
+    padding-top: 1px;
+}
+
+.inicio a {
+    color: white;
+    font-size: 15px;
+}
+
+.inicio:hover {
+    background-color: var(--textos);
+}
+
 
 .verde p{
     
@@ -51,4 +139,151 @@
     justify-content: center;
 
 }
+
+
+
+.texto-path{
+    font-size: 14px;
+    font-family: Roboto;
+    Color:var(--celeste);
+    padding-bottom: 45px;
+}
+
+
+.texto{
+    padding-left: 20px;
+}
+
+.contenedor-cajas {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+  }
+
+
+
+.agregar-informe {
+    border: 0;
+   background-color: var(--gris-claro);
+   color: white;
+   font-size: 10px;
+   padding: 5px;
+   border-radius: 5px;
+   text-transform: uppercase;
+   height: 50px;
+   width: 200px;
+   margin-left: 15px;
+}
+
+.agregar-informe:hover{
+    color: var(--textos);
+}
+
+
+.mesas-estructuradas{
+    display: flex;
+    align-items: center; 
+    margin: 15px;
+    width: 280px;
+    height: 70px;
+    padding: 0.5rem 1rem;
+    font-family: #fff;
+    border-radius: 10px;
+    background-color: var(--celeste);
+    color: white;
+  }
+  
+  .icono-mesa {
+    flex: 0 0 30%; 
+    text-align: center;
+    transform: translateX(-5px);
+  }
+  
+  .icono-mesa i {
+    font-size: 30px; 
+  }
+  
+  .contenido-mesa h3{
+    color: white; 
+  }
+  
+  
+  .contenido-mesa p {
+    
+    line-height: 1.5; 
+    color: white;
+    font-size: 12px;
+  }
+
+  .electores{
+    display: flex;
+    align-items: center; 
+    margin: 15px;
+    width: 280px;
+    height: 70px;
+    padding: 0.5rem 1rem;
+    font-family: #fff;
+    border-radius: 10px;
+    background-color: var(--magenta);
+    color: white;
+  }
+  
+  .icono-electores {
+    flex: 0 0 30%; 
+    text-align: center;
+    transform: translateX(-5px);
+  }
+  
+  .icono-electores i {
+    font-size: 30px; 
+  }
+  
+  .contenido-electores h3{
+    color: white; 
+  }
+  
+  
+  .contenido-electores p {
+    
+    line-height: 1.5; 
+    color: white;
+    font-size: 12px;
+  }
+
+  .participacion-sobre-estructurado{
+    display: flex;
+    align-items: center; 
+    margin: 15px;
+    width: 280px;
+    height: 70px;
+    padding: 0.5rem 1rem;
+    font-family: #fff;
+    border-radius: 10px;
+    background-color: var(--morado);
+    color: white;
+  }
+  
+  .icono-participacion{
+    flex: 0 0 30%; 
+    text-align: center;
+    transform: translateX(-5px);
+  }
+  
+  .icono-participacion i {
+    font-size: 30px; 
+  }
+  
+  .contenido-participacion h3{
+    color: white; 
+    font-size: 12px;
+  }
+  
+  
+  .contenido-participacion p {
+    
+    line-height: 1.5; 
+    color: white;
+    font-size: 12px;
+  }
+
 
