@@ -16,22 +16,16 @@
 </head>
 
 <body>
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="img/icons/favicon-16x16.png">
     <title>Generales | GOB</title>
-    
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/5.15.4/css/all.min.css"
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/5.15.4/css/all.min.css"
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/pages/generales.css" />
@@ -50,8 +44,8 @@
         <div class="selects">
           <select name="Año" class="anio">
             <option value="Año" selected disabled>Año</option>
-              <option value="2022">2020</option>
-              <option value="2023">2023</option>
+            <option value="2022">2020</option>
+            <option value="2023">2023</option>
           </select>
           <select name="Cargo" class="cargo">
             <option value="Cargo" selected disabled>Cargo</option>
@@ -80,88 +74,153 @@
         </ul>
       </div>
     </header>
-  <!-- Contenido principal de la página -->
-  <main>
-    <div class="mensjaes">
-      <div class="verde">
+    <!-- Contenido principal de la página -->
+    <main>
+      <div class="mensjaes">
+        <div class="verde">
 
-        <p> <i class="fa fa-thumbs-up"></i> Se agrego con éxito el resultado al informe</p>
-      </div>
-      <div class="rojo">
-        <p> <i class=" fa fa-exclamation-triangle"></i> Error: Se produjo un error al intentar agregar resultados al
-          informe</p>
-      </div>
-      <div class="amarillo">
-        <p> <i class="fa fa-exclamation"></i> La operacion no se pudo completar</p>
-      </div>
-    </div>
-    <!--Seccion para agregar una palicula favorita por codigo-->
-    <div class="texto">
-      <h1>Elecciones 2021 | General</h1>
-
-      <p class="texto-path">2020 > Generales > Provisorio > Senadores Nacionales > Buenos
-        Aires</p>
-    </div>
-
-    <div class="contenedor-cajas">
-
-      <button class="agregar-informe">
-        <span>+Agregar a informe</span>
-      </button>
-
-      <div class="mesas-estructuradas">
-        <div class="icono-mesa">
-          <i class="fa fa-check"></i>
+          <p> <i class="fa fa-thumbs-up"></i> Se agrego con éxito el resultado al informe</p>
         </div>
-        <div class="contenido-mesa">
-          <h3>Mesas estructuradas</h3>
-          <p>62.71%</p>
+        <div class="rojo">
+          <p> <i class=" fa fa-exclamation-triangle"></i> Error: Se produjo un error al intentar agregar resultados al
+            informe</p>
+        </div>
+        <div class="amarillo">
+          <p> <i class="fa fa-exclamation"></i> La operacion no se pudo completar</p>
         </div>
       </div>
-      <div class="electores">
-        <div class="icono-electores">
-          <i class="fa fa-check"></i>
-        </div>
-        <div class="contenido-electores">
-          <h3>Electores</h3>
-          <p>62.71%</p>
-        </div>
+      <!--Seccion para agregar una palicula favorita por codigo-->
+      <div class="texto">
+        <h1>Elecciones 2021 | General</h1>
+
+        <p class="texto-path">2020 > Generales > Provisorio > Senadores Nacionales > Buenos
+          Aires</p>
       </div>
-      <div class="participacion-sobre-estructurado">
-        <div class="icono-participacion">
-          <i class="fa fa-check"></i>
+      <div class="all-container">
+        <div class="contenedor-cajas">
+          
+            <button class="agregar-informe">
+              <span>+Agregar a informe</span>
+            </button>
+         
+          <div class="derecha">
+            <div class="mesas-estructuradas">
+              <div class="icono-mesa">
+                <i class="fa fa-check"></i>
+              </div>
+              <div class="contenido-mesa">
+                <h3>Mesas estructuradas</h3>
+                <p>62.71%</p>
+              </div>
+            </div>
+            <div class="electores">
+              <div class="icono-electores">
+                <i class="fa fa-check"></i>
+              </div>
+              <div class="contenido-electores">
+                <h3>Electores</h3>
+                <p>62.71%</p>
+              </div>
+            </div>
+            <div class="participacion-sobre-estructurado">
+              <div class="icono-participacion">
+                <i class="fa fa-check"></i>
+              </div>
+              <div class="contenido-participacion">
+                <h3>Participacion sobre estructurado</h3>
+                <p>62.71%</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="contenido-participacion">
-          <h3>Participacion sobre estructurado</h3>
-          <p>62.71%</p>
+
+        <div class="grid-container">
+          <div class="grid-1">
+            <table>
+              <thead>
+                <h2>Agrupaciones politicas</h2>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <h3>Juntos por el cambio</h3>
+                    <hr>
+                    <p>38%</p>
+                    <p>30000 votos</p>
+                    <div class="progress" style="background: var(--grafica-amarillo-claro);">
+                      <div class="progress-bar" style="width:15%; background: var(--graficaamarillo);">
+                      <span class="progress-bar-text">15%</span>
+                      </div>
+                      </div>
+                      
+                  </td>
+                  
+                </tr>
+                <tr>
+                  <td>
+                    <div class="progress" style="background: var(--grafica-amarillo-claro);">
+                      <div class="progress-bar" style="width:15%; background: var(--graficaamarillo);">
+                      <span class="progress-bar-text">15%</span>
+                      </div>
+                      </div>
+                      
+                  </td>
+                    
+                </tr>
+                <tr>
+                  <TD>  
+                    <div class="progress" style="background: var(--grafica-amarillo-claro);">
+                      <div class="progress-bar" style="width:15%; background: var(--graficaamarillo);">
+                      <span class="progress-bar-text">15%</span>
+                      </div>
+                      </div>
+                      
+                  </TD>
+                </tr>
+                <tr>
+
+                </tr>
+
+
+              </tbody>
+
+            </table>
+
+
+
+          </div>
+          <div class="grid-2">
+
+          </div>
+          <div class="grid-3">
+
+          </div>
         </div>
       </div>
 
+    </main>
+    <!--Pie de página-->
 
-    </div>
-  </main>
-  <!--Pie de página-->
-
-  <footer>
-    <div class="footer-container">
-      <div class="footer-img">
-        <img src="img/icons/Ministerio-del-Interior_pluma.1ab9a7a7.png" alt="ministerio" />
-        <img src="img/icons/Logo_DINE_negativo.a88f983e.png" alt="dine-neg" />
-        <img src="img/icons/logos_001-10.4430c8d5.png" alt="001logo" />
+    <footer>
+      <div class="footer-container">
+        <div class="footer-img">
+          <img src="img/icons/Ministerio-del-Interior_pluma.1ab9a7a7.png" alt="ministerio" />
+          <img src="img/icons/Logo_DINE_negativo.a88f983e.png" alt="dine-neg" />
+          <img src="img/icons/logos_001-10.4430c8d5.png" alt="001logo" />
+        </div>
+        <div class="footer-parrafo">
+          <p>
+            “Resultados Provisorios en base a telegramas recibidos (Art. 43 Ley
+            26571 y Art. 105 Ley 19945). Los porcentajes de las agrupaciones
+            políticas son calculados sobre los votos válidos (PASO) conforme al
+            art. 45 Ley 26.571 y afirmativos (Generales). No se incluyen los
+            votos correspondientes a los electores residentes en el exterior ni
+            privados de la libertad. Al usar este sitio usted acepta los
+            <a href="www.google.com" id="link-footer">Términos y Condiciones."</a>
+          </p>
+        </div>
       </div>
-      <div class="footer-parrafo">
-        <p>
-          “Resultados Provisorios en base a telegramas recibidos (Art. 43 Ley
-          26571 y Art. 105 Ley 19945). Los porcentajes de las agrupaciones
-          políticas son calculados sobre los votos válidos (PASO) conforme al
-          art. 45 Ley 26.571 y afirmativos (Generales). No se incluyen los
-          votos correspondientes a los electores residentes en el exterior ni
-          privados de la libertad. Al usar este sitio usted acepta los
-          <a href="www.google.com" id="link-footer">Términos y Condiciones."</a>
-        </p>
-      </div>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 
 </html>

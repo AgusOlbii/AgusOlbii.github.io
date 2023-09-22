@@ -44,6 +44,14 @@
   --mensaje-usuario-rojo: #dc3545;
 }
 
+
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 100vh;
+}
+
 p{
   font-size: 12px;
   color: var(--textos);
@@ -99,8 +107,7 @@ footer {
   padding: 20px;
   text-align: center;
   width: 100%;
-  position: fixed;
-  bottom: 0;
+  margin-top: auto;
 }
 
 .footer-container {
