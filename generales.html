@@ -44,16 +44,18 @@
       <div class="barra-de-menu">
         <div class="selects">
           <select name="Año" class="anio" id="select-anio">
-            <option value="none" selected disabled>Año</option>
+            <option value="none" selected >Año</option>
           </select>
           <select name="Cargo" class="cargo" id="select-cargo">
-            <option value="none" selected disabled>Cargo</option>
+            <option value="none" selected >Cargo</option>
           </select>
           <select name="Distrito" class="distrito" id="select-districto">
-            <option value="none" selected disabled>Distrito</option>
+            <option value="none" selected >Distrito</option>
           </select>
-          <i class="fa-solid fa-magnifying-glass" id="Lupa"></i>
-          <input type="search" class="filtrar" placeholder="FILTRAR">
+            <select name="seccion" type="hidden" class="districto" id="select-seccion" >
+                <option value="none" selected >Seccion</option>
+            </select>  
+          <button class="filtrar" id="button-filter"><i class="fa-solid fa-magnifying-glass" id="Lupa"></i>Filtrar</button>
         </div>
         <ul>
           <li><a class="boton-paso" href="paso.html">PASO</a></li>
@@ -68,17 +70,14 @@
     </header>
     <!-- Contenido principal de la página --> 
     <main>
-      <div class="mensajes">
-        <div class="verde" id="mensaje-verde">
-          <p><i class="fa fa-thumbs-up"></i> Se agregó con éxito el resultado al informe</p>
+      <section id="alert-messages">
+        <div class="alert alert-success" id="mensaje-verde">
         </div>
-        <div class="rojo" id="mensaje-rojo">
-          <p><i class="fa fa-exclamation-triangle"></i> Error: Se produjo un error al intentar agregar resultados al informe</p>
+        <div class="alert alert-danger" id="mensaje-rojo">
         </div>
-        <div class="amarillo" id="mensaje-amarillo">
-          <p><i class="fa fa-exclamation"></i> La operación no se pudo completar</p>
+        <div class="alert alert-warning" id="mensaje-amarillo">
         </div>
-    </div>
+    </section>
       <!--Seccion para agregar una palicula favorita por codigo-->
       <div class="texto">
         <h1 class="titulo-principal" id="titulo-principal">Elecciones 2021 | General</h1>
@@ -143,7 +142,7 @@
               </div>
               <div class="contenido-mesa">
                 <h3>Mesas estructuradas</h3>
-                <p>62.71%</p>
+                <p id="contenido-mesa"></p>
               </div>
             </div>
             <div class="electores">
@@ -237,7 +236,7 @@
               </div>
               <div class="contenido-electores">
                 <h3>Electores</h3>
-                <p>62.71%</p>
+                <p id="contenido-electores"></p>
               </div>
             </div>
             <div class="participacion-sobre-estructurado">
@@ -298,7 +297,7 @@
               </div>
               <div class="contenido-participacion">
                 <h3>Participacion sobre estructurado</h3>
-                <p>62.71%</p>
+                <p id="contenido-participacion"></p>
               </div>
             </div>
           </div>

@@ -6,6 +6,7 @@ select {
   padding: 5px;
   color: var(--celeste);
   font-weight: bold;
+  width: 100px;
 }
 
 .barra-de-menu {
@@ -24,9 +25,22 @@ select {
   border-radius: 15px;
   font-family: #fff;
   font-size: 15px;
-  width: 100px;
-  padding-left: 15px;
-  padding-inline-start: 20px;
+  max-width: 100px;
+  border: none;
+  cursor: pointer;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.filtrar i {
+  margin-left: 0;
+}
+
+.barra-de-menu i {
+  margin: 0;
+  color: rgb(0, 0, 0);
+  outline: none;
+  font-size: 15px;
 }
 
 .barra-de-menu i {
@@ -95,51 +109,58 @@ select {
   background-color: var(--textos);
 }
 
-.verde p {
-  display: none;
-  border-radius: 10px;
+.alert {
+  color: #ffffff;
   width: 400px;
   margin: 20px auto;
   padding: 15px;
-  color: #ffffff;
+  border-radius: 10px;
+  text-align: center;
   font-size: 12px;
   font-weight: 200;
-  text-align: center;
+  display: flex;
   align-items: center;
-  justify-content: center;
+  visibility: hidden;
+}
 
+.alert.alert-cargando {
+  background-color: lightblue;
+}
+
+.alert.alert-cargando::before {
+  content: "\f110";
+  font-family: FontAwesome;
+  margin-right: 10px;
+}
+
+.alert.alert-success {
   background-color: var(--mensaje-usuario-verde);
 }
 
-.rojo p {
-  background-color: var(--mensaje-usuario-rojo);
-
-  display: none;
-  border-radius: 10px;
-  width: 400px;
-  margin: 20px auto;
-  padding: 15px;
-  color: #ffffff;
-  font-size: 12px;
-  font-weight: 200;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
+.alert.alert-success::before {
+  content: "\f164";
+  font-family: FontAwesome;
+  margin-right: 10px;
 }
 
-.amarillo p {
+.alert.alert-danger {
+  background-color: var(--mensaje-usuario-rojo);
+}
+
+.alert.alert-danger::before {
+  content: "\f071";
+  font-family: FontAwesome;
+  margin-right: 10px;
+}
+
+.alert.alert-warning {
   background-color: var(--mensaje-usuario-amarillo);
-  display: none;
-  border-radius: 10px;
-  width: 400px;
-  margin: 20px auto;
-  padding: 15px;
-  color: #ffffff;
-  font-size: 12px;
-  font-weight: 200;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
+}
+
+.alert.alert-warning::before {
+  content: "\f06a";
+  font-family: FontAwesome;
+  margin-right: 10px;
 }
 
 .texto-path {
@@ -311,6 +332,7 @@ select {
   grid-template-columns: 1fr 1fr 1fr;
   text-align: center;
   margin: auto;
+  overflow: auto;
 }
 
 .grid-1 {
