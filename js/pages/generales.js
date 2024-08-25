@@ -21,6 +21,10 @@ const porcentajeParticipacion = $('#contenido-participacion');
 const porcentajeElectores = $('#contenido-electores');
 const porcentajeMesa = $('#contenido-mesa');
 
+const tituloProvincia = $('#titulo-provincia');
+const cuadroMapa = $('#provincia');
+
+let eleccionAnio = "";
 let eleccionCargo = "";
 let eleccionSeccion = "";
 let eleccionDistricto = "";
@@ -39,6 +43,34 @@ const mostrarAlerta = (tipoMensaje, mensaje) => {
         ocultarAlertas();
     }, 5000);
 };
+
+const actualizarImagen = () => {
+
+    cuadroMapa.innerHTML = '';
+    tituloProvincia.innerHTML = '';
+
+    const provincia = provinciasSVG.find(
+        e => e.provincia.toLowerCase() === selectDistrito.toLowerCase()
+    );
+
+    if (provincia) {
+        const tituloProv = document.createElement('h2');
+        tituloProv.textContent = provincia.provincia;
+        tituloProvincia.textContent = provincia.provincia;
+        tituloProvincia.innerHTML = provincia.provincia;
+
+        const divProvincia = document.createElement('div');
+        divProvincia.innerHTML = provincia.svg;
+
+        cuadroMapa.appendChild(divProvincia);
+    } else {
+        const tituloProblema = document.createElement("h1");
+        tituloProblema.textContent = "Hubo un problema al cargar los mapas...";
+        tituloProblema.classList.add("rojo");
+        cuadroMapa.appendChild(tituloProblema);
+    }
+}
+
 
 const ocultarAlertas = () => {
     mensajeErrorAmarillo.style.visibility = "hidden";
@@ -87,8 +119,8 @@ const cargarCuadros = async () => {
 }
 
 const consultarCargos = async () => {
-    eleccionCargo = selectAnio.options[selectAnio.selectedIndex].value;
-    const url = `https://resultados.mininterior.gob.ar/api/menu?año=${eleccionCargo}`;
+    eleccionAnio = selectAnio.options[selectAnio.selectedIndex].value;
+    const url = `https://resultados.mininterior.gob.ar/api/menu?año=${eleccionAnio}`;
 
     try {
         const response = await fetch(url);
@@ -106,15 +138,15 @@ const consultarCargos = async () => {
                 }
             });
         } else {
-            mostrarAlerta(mensajeErrorRojo, "Error. El servicio está caído por el momento. Intente más tarde.");
+            mostrarAlerta(mensajeErrorRojo, "Error. El servicioo está caído por el momento. Intente más tarde.");
         }
     } catch (err) {
-        mostrarAlerta(mensajeErrorRojo, "Error. El servicio está caído por el momento. Intente más tarde.");
+        mostrarAlerta(mensajeErrorRojo, "Error. El servicioo está caído por el momento. Intente más tarde.");
     }
 };
 
 const consultarSeccion = async () => {
-    eleccionSeccion = selectDistrito.options[selectDistrito.selectedIndex].textContent;
+    eleccionDistricto = selectDistrito.options[selectDistrito.selectedIndex].textContent;
     limpiarSelect(selectSeccion)
 
     try {
@@ -145,7 +177,7 @@ const consultarSeccion = async () => {
 };
 
 const ConsultarDistritos = async () => {
-    eleccionDistricto = selectCargo.options[selectCargo.selectedIndex].textContent;
+    eleccionCargo = selectCargo.options[selectCargo.selectedIndex].textContent;
     limpiarSelect(selectDistrito)
     try {
         const datosElecciones = await fetchedData(`https://resultados.mininterior.gob.ar/api/menu?año=${selectAnio.value}`);
@@ -179,6 +211,10 @@ function limpiarSelect(select) {
     }
 }
 
+const limpiarMapas = (elemento) => {
+    elemento.innerHTML = '';
+}
+
 const populateSelect = (data, selectElement) => {
     data.forEach(item => {
         const option = document.createElement('option');
@@ -205,6 +241,7 @@ const clickHandlerFilter = () => {
     limpiarSelect(selectDistrito);
     limpiarSelect(selectSeccion);
     cargarPeriodosDisponibles();
+    actualizarImagen()
     mostrarAlerta(mensajeErrorVerde, "Entraste bien doble P papuuu")
 
 }
@@ -214,5 +251,8 @@ document.addEventListener("DOMContentLoaded", () => {
     selectAnio.addEventListener("change", consultarCargos);
     selectCargo.addEventListener("change", ConsultarDistritos);
     selectDistrito.addEventListener("change", consultarSeccion);
+    selectSeccion.addEventListener("change", () => {
+        eleccionSeccion = selectSeccion.options[selectSeccion.selectedIndex].textContent;
+    })
     buttonFilter.addEventListener("click", clickHandlerFilter);
 });
